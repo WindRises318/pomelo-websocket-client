@@ -5,8 +5,9 @@
   "type": "module",
   "keywords": [
     "pomelo",
-    "websocket",
-    "client"
+    "websocket-client",
+    "pomelo-websocket-client",
+    "pomelo-jsclient-websocket"
   ],
   "files": [
     "dist",
@@ -16,6 +17,10 @@
   ],
   "main": "./es/main.js",
   "types": "./es/main.d.ts",
+  "homepage": "https://github.com/WindRises318/pomelo-websocket-client?tab=readme-ov-file",
+  "repository": {
+    "url": "https://github.com/WindRises318/pomelo-websocket-client"
+  },
   "exports": {
     ".": {
       "import": {
