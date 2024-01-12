@@ -1,0 +1,46 @@
+{
+  "name": "pomelo-websocket-client",
+  "private": false,
+  "version": "1.0.5",
+  "type": "module",
+  "keywords": [
+    "pomelo",
+    "websocket",
+    "client"
+  ],
+  "files": [
+    "dist",
+    "es",
+    "cjs",
+    "README.md"
+  ],
+  "main": "./es/main.js",
+  "types": "./es/main.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./es/main.js",
+        "types": "./es/main.d.ts"
+      },
+      "require": {
+        "default": "./cjs/main.js",
+        "types": "./cjs/main.d.ts"
+      }
+    }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:patch": "vite build && npm version patch",
+    "build:minor": "vite build && npm version minor",
+    "build:major": "vite build && npm version major"
+  },
+  "devDependencies": {
+    "vite": "^5.0.10",
+    "vite-plugin-dts": "^3.7.0"
+  },
+  "license": "MIT"
+}
