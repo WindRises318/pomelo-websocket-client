@@ -22,9 +22,6 @@ jobs:
   publish:
     needs: build
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -32,4 +29,4 @@ jobs:
           node-version: 18
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.PUBLISH_CODE}}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
