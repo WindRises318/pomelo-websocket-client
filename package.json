@@ -33,6 +33,9 @@
       }
     }
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build"
