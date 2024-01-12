@@ -38,10 +38,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "build:patch": "vite build && npm version patch",
-    "build:minor": "vite build && npm version minor",
-    "build:major": "vite build && npm version major"
+    "build": "vite build"
   },
   "devDependencies": {
     "vite": "^5.0.10",
