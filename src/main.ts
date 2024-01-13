@@ -1,8 +1,10 @@
 
 import PomeloClient from '../lib/main'
 
+// 创建对象
 const client = new PomeloClient()
 
+// init
 function queryEntry(uid: any, callback: Function) {
   var route = 'gate.gateHandler.queryEntry';
   client.init({
