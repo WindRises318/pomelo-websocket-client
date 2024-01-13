@@ -17,7 +17,7 @@
   ],
   "main": "./es/main.js",
   "types": "./es/main.d.ts",
-  "homepage": "https://github.com/WindRises318/pomelo-websocket-client?tab=readme-ov-file",
+  "homepage": "https://github.com/WindRises318/pomelo-websocket-client/blob/main/README.md",
   "repository": {
     "url": "https://github.com/WindRises318/pomelo-websocket-client"
   },
