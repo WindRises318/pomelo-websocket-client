@@ -9,6 +9,18 @@ on:
       - main
 
 jobs:
+  version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: npm version patch
+      - run: git add .
+      - run: git commit -m 'update version'
+      - run: git push
+    
   build:
     runs-on: ubuntu-latest
     steps:
