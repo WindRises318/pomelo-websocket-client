@@ -19,7 +19,7 @@
   "types": "./es/main.d.ts",
   "homepage": "https://github.com/WindRises318/pomelo-websocket-client/blob/main/README.md",
   "repository": {
-    "url": "https://github.com/WindRises318/pomelo-websocket-client"
+    "url": "git+https://github.com/WindRises318/pomelo-websocket-client.git"
   },
   "exports": {
     ".": {
